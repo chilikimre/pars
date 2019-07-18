@@ -70,7 +70,7 @@ def main():
 
     # for index, url in enumerate(all_links):
 
-    with Pool(20) as p:
+    with Pool(60) as p:
         p.map(make_all, all_links)
 
     end = datetime.now()
